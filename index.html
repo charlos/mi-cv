@@ -5,26 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MI CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/56afc4b68b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <div class="menu">
-        <h2>ABOUT</h2>
+      <nav>
+        <img class="logo" src="images/profile.jpg" alt="logo"/>
         <ul>
+          <li class="activo"><b>ABOUT</b></li>
           <li>EXPERIENCE</li>
           <li>EDUCATION</li>
           <li>SKILLS</li>
           <li>INTEREST</li>
-          <li>AWARS</li>
+          <li>AWARDS</li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main>
-      <div class="presentacion">
-        <h1>CLARENCE TAYLOR</h1>
+      <div class="contenedor">
+        <h1>CLARENCE <mark>TAYLOR</mark></h1>
         <h3>
           3542 BERRY STREET - CHEYENNE WELLS, CO 80810 - (317)585-8468 -
-          NAME@EMAIL.COM
+          <u>NAME@EMAIL.COM</u>
         </h3>
         <p>
           I am experienced in leveraging agile frameworks to provide a robust
@@ -32,7 +41,28 @@
           strategy faster collaborative thinking to further the overall value
           proposition.
         </p>
-        <div class="redes-sociales"></div>
+        <ul class="lista-sociales">
+          <li><a href="https://www.linkedin.com/" target="_blank">
+            <span class="fa-stack fa-xl">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i></a>
+          </li>
+          <li><a href="https://github.com/" target="_blank">
+            <span class="fa-stack fa-xl">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i></a>
+          </li>
+          <li><a href="https://twitter.com/" target="_blank">
+            <span class="fa-stack fa-xl">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i></a>
+          </li>
+          <li><a href="https://www.facebook.com/" target="_blank">
+            <span class="fa-stack fa-xl">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i></a>
+          </li>
+        </ul>
       </div>
     </main>
   </body>
