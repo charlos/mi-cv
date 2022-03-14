@@ -13,6 +13,22 @@ body {
   padding: 0%;
 }
 
+main {
+  height: 100%;
+  width: 75%;
+  padding-left: 25%;
+}
+
+.experience {
+  height: 220%;
+}
+
+.contenedor {
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top: 20%;
+}
+
 ul {
   list-style: none;
   padding-left: 0%;
@@ -21,23 +37,37 @@ ul {
 
 a {
   color: currentColor;
+  text-decoration: none;
 }
 
 h1 {
-  font-size: 380%;
+  font-size: 400%;
   margin: 0%;
+}
+
+h2 {
+  font-size: 220%;
+  margin-bottom: 0%;
 }
 
 h3 {
-  font-size: 120%;
-  margin: 0%;
-  color: rgb(94, 92, 92);
+  font-size: 170%;
+  margin: 0% 0% 2% 0%;
+  color: rgb(131, 128, 128);
+  font-weight: lighter;
+}
+
+h4 {
+  color: rgb(206, 98, 55);
+  font-weight: lighter;
+  font-size: 130%;
 }
 
 p {
-  font-size: 100%;
+  font-size: 115%;
   margin-top: 3%;
-  color: rgb(94, 92, 92);
+  color: rgb(131, 128, 128);
+  padding-right: 0%;
 }
 
 mark,
@@ -46,7 +76,7 @@ u {
   color: rgb(206, 98, 55);
 }
 
-/********************MENU****************************/
+/********************HEADER****************************/
 
 header {
   float: left;
@@ -58,6 +88,7 @@ header {
 }
 
 .logo {
+  height: 100%;
   width: 55%;
   border-radius: 50%;
   border-style: solid;
@@ -66,29 +97,23 @@ header {
 }
 
 nav li {
+  height: 100%;
   margin-top: 3%;
   color: rgba(255, 255, 255, 0.55);
   letter-spacing: 2px;
-  font-size: 90%;
+  font-size: 120%;
 }
 
-.activo {
+.activo:hover {
+  color: rgb(255, 254, 254);
+  text-shadow: 0 0 30px #fff;
+}
+
+.pagina {
   color: rgb(255, 254, 254);
 }
 
-/********************MENU****************************/
-
-main {
-  height: 100%;
-  width: 75%;
-  padding-top: 14%;
-  padding-left: 25%;
-}
-
-.contenedor {
-  padding-left: 3%;
-  padding-right: 5%;
-}
+/********************HEADER****************************/
 
 .lista-sociales {
   margin-top: 3%;
@@ -99,3 +124,65 @@ main {
   display: inline;
   color: rgb(94, 92, 92);
 }
+
+/******************EXPERIENCE****************/
+
+.contenedor-2 {
+  padding-left: 3%;
+  padding-right: 5%;
+}
+
+.tarjeta {
+  float: left;
+  height: 100%;
+  width: 80%;
+}
+
+.fecha {
+  float: right;
+  height: 100%;
+  width: 20%;
+  margin: 0%;
+  padding: 0%;
+  text-align: right;
+}
+
+/************EXPERIENCE*********************/
+
+/************SKILLS**********************/
+
+.lista-programacion {
+  margin-top: 3%;
+  padding-left: 0%;
+  margin-bottom: -3%;
+}
+
+.lista-programacion li {
+  display: inline;
+  color: rgb(94, 92, 92);
+  letter-spacing: 8px;
+}
+
+.flow li {
+  color: rgb(131, 128, 128);
+  font-size: 110;
+  padding-left: 1%;
+  font-weight: lighter;
+}
+
+/**********SKILLS******************/
+
+/**********AWARDS*****************/
+
+.trofeos li {
+  color: rgb(131, 128, 128);
+  font-size: 110;
+  padding-left: 1%;
+  font-weight: lighter;
+}
+
+.fa-trophy {
+  color: rgb(230, 210, 34);
+}
+
+/**********AWARDS****************/
