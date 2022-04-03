@@ -210,15 +210,6 @@ nav li {
   display: none;
 }
 
-.fa-square {
-  position: absolute;
-  right: 6px;
-  top: -33px;
-  background-color: transparent;
-  color: rgb(223, 174, 155);
-  display: none;
-}
-
 .navbar-2 .logo-1 a {
   text-decoration: none;
   font-size: 20px;
@@ -267,8 +258,7 @@ nav li {
     display: block;
   }
   .navbar-2 .btn,
-  .navbar-2 .fa-bars,
-  .fa-square {
+  .navbar-2 .fa-bars {
     display: block;
   }
 }
