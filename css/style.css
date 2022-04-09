@@ -12,6 +12,7 @@ main {
   height: 100%;
   width: 78%;
   margin-left: 22%;
+  margin-bottom: 30px;
 }
 
 .contenedor {
@@ -32,7 +33,7 @@ a {
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 280%;
   margin: 0%;
 }
 
@@ -95,7 +96,7 @@ nav li {
   margin-top: 3%;
   color: rgba(255, 255, 255, 0.55);
   letter-spacing: 2px;
-  font-size: 85%;
+  font-size: 18px;
 }
 
 .activo:hover {
@@ -128,13 +129,13 @@ nav li {
 .tarjeta {
   float: left;
   height: 100%;
-  width: 80%;
+  width: 70%;
 }
 
 .fecha {
   float: right;
   height: 100%;
-  width: 20%;
+  width: 30%;
   margin: 0%;
   padding: 0%;
   text-align: right;
@@ -179,3 +180,149 @@ nav li {
 }
 
 /**********AWARDS****************/
+
+/**********NAVBAR**************/
+
+.navbar-2 {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px;
+  background-color: rgb(206, 98, 55);
+  z-index: 1;
+}
+
+.navbar-2 input[type="checkbox"] {
+  position: absolute;
+  top: 11px;
+  right: 50px;
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  opacity: 0;
+  display: none;
+}
+
+.navbar-2 .fa-bars {
+  position: absolute;
+  right: 58px;
+  top: 34px;
+  color: rgb(223, 174, 155);
+  display: none;
+}
+
+.navbar-2 .logo-1 a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+}
+
+.navbar-2 .navbar-item-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-item-list li {
+  list-style-type: none;
+}
+
+.navbar-item-list li a {
+  position: relative;
+  display: inline-block;
+  padding-left: 2px;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+
+/* Responsive*/
+
+@media only screen and (max-width: 750px) {
+  .navbar-2 {
+    display: block;
+  }
+
+  .navbar-2 .navbar-item-list {
+    display: none;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .navbar-2 input[type="checkbox"] {
+    display: block;
+    opacity: 0;
+  }
+  .navbar-2 input[type="checkbox"]:checked ~ .navbar-item-list {
+    display: block;
+  }
+  .navbar-2 .btn,
+  .navbar-2 .fa-bars {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav ul li {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 595px) {
+  main {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+  .contenedor {
+    padding-left: 5%;
+    padding-top: 80px;
+    padding-bottom: 5%;
+  }
+  .contenedor-2 {
+    padding-top: 80px;
+  }
+  header {
+    display: none;
+  }
+}
+
+@media (min-width: 596px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  header {
+    padding-top: 3%;
+  }
+  main {
+    margin-bottom: 15px;
+  }
+  .contenedor {
+    padding-top: 10px;
+  }
+  .contenedor-2 {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-height: 370px) {
+  header {
+    padding-top: 3%;
+  }
+  .logo {
+    display: none;
+  }
+  .contenedor {
+    padding-top: 10px;
+  }
+  .contenedor-2 {
+    padding-top: 10px;
+  }
+}
