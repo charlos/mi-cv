@@ -12,6 +12,7 @@ main {
   height: 100%;
   width: 78%;
   margin-left: 22%;
+  margin-bottom: 30px;
 }
 
 .contenedor {
@@ -183,18 +184,20 @@ nav li {
 /**********NAVBAR**************/
 
 .navbar-2 {
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   padding: 18px;
   background-color: rgb(206, 98, 55);
+  z-index: 1;
 }
 
 .navbar-2 input[type="checkbox"] {
   position: absolute;
   top: 11px;
-  right: 13.5px;
+  right: 50px;
   width: 45px;
   height: 45px;
   z-index: 1;
@@ -204,7 +207,7 @@ nav li {
 
 .navbar-2 .fa-bars {
   position: absolute;
-  right: 22px;
+  right: 58px;
   top: 34px;
   color: rgb(223, 174, 155);
   display: none;
@@ -277,8 +280,11 @@ nav li {
   }
   .contenedor {
     padding-left: 5%;
-    padding-top: 3%;
+    padding-top: 80px;
     padding-bottom: 5%;
+  }
+  .contenedor-2 {
+    padding-top: 80px;
   }
   header {
     display: none;
@@ -288,5 +294,35 @@ nav li {
 @media (min-width: 596px) {
   .navbar {
     display: none;
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  header {
+    padding-top: 3%;
+  }
+  main {
+    margin-bottom: 15px;
+  }
+  .contenedor {
+    padding-top: 10px;
+  }
+  .contenedor-2 {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-height: 370px) {
+  header {
+    padding-top: 3%;
+  }
+  .logo {
+    display: none;
+  }
+  .contenedor {
+    padding-top: 10px;
+  }
+  .contenedor-2 {
+    padding-top: 10px;
   }
 }
